@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "dotenv-cli": "^8.0.0"
+  },
+"scripts": {
+  "generate-manifest": "dotenv -e .env -- node -e \"const fs=require('fs');let m=require('./manifest.template.json');m.browser_specific_settings.gecko.id=process.env.GECKO_ID;fs.writeFileSync('manifest.json',JSON.stringify(m,null,2));\"",
+  "build": "npm run generate-manifest && web-ext build"
+}
+}

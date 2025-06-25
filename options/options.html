@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="stylesheet" href="options.css">
+  <title>Send to Anytype Settings</title>
+</head>
+<body>
+  <h2>Extension Settings</h2>
+  
+  <h3>Connect to Anytype</h3>
+  <label>Anytype API URL: <input type="text" id="apiUrl" value="http://localhost:31009"></label><br>
+  <label>API key: <input type="password" id="token"></label><br>
+  <button id="saveSettings" style="width:30%"> Connect to Anytype </button>
+  <div id="anytypeStatus" style="margin-top: 10px; color: green;"></div>
+  
+  
+  <h3>Select default space</h3>
+  <label>Select Space:
+    <select id="spaceDropdown">
+      <option disabled selected>Connect to Anytype first</option>
+    </select>
+  </label>
+  <div id="spaceStatus" style="margin-top: 10px; color: green;"></div>
+  
+  <script src="options.js"></script>
+</body>
+</html>

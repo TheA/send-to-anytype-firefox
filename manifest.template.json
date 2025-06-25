@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Send to Anytype",
+  "version": "0.0.2",
+  "description": "Saves the current page to local Anytype client.",
+  "homepage_url": "https://github.com/TheA/send-to-anytype-firefox",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "http://localhost/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Send URL"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false,
+    "browser_style": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "GECKO_ID",
+      "strict_min_version": "58.0"
+    }
+  }
+}

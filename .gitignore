@@ -1,0 +1,17 @@
+# Node dependencies
+node_modules/
+
+# Build output from web-ext
+web-ext-artifacts/
+
+# Local-only files (don't commit secrets or generated files)
+.env
+manifest.json
+
+# OS / Editor / Miscellaneous
+.DS_Store
+*.log
+*.zip
+*.tmp
+*.swp
+*.swo
