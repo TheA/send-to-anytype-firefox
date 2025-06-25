@@ -18,9 +18,19 @@ browser.browserAction.onClicked.addListener(async (tab) => {
       console.log("URL sent successfully!");
     }
   } catch (err) {
+    sendNotification("Failed to send to Anytype", "Is Anytype open? Is the add-on configuration correct?");
     console.error("Unexpected error:", err);
   }
 });
+
+async function sendNotification(title, content){
+  browser.notifications.create({
+    type: "basic",
+    iconUrl: browser.extension.getURL("icons/q5855llvm.png"),
+    title: title,
+    message: content,
+});
+}
 
 function getMissingConfigKeys(config, requiredKeys) {
   return requiredKeys.filter((key) => !config[key]);

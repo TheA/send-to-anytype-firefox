@@ -8,7 +8,8 @@
     "storage",
     "tabs",
     "activeTab",
-    "http://localhost/*"
+    "http://localhost/*",
+    "notifications"
   ],
   "background": {
     "scripts": ["background.js"],
