@@ -26,7 +26,7 @@ browser.browserAction.onClicked.addListener(async (tab) => {
 async function sendNotification(title, content){
   browser.notifications.create({
     type: "basic",
-    iconUrl: browser.extension.getURL("icons/q5855llvm.png"),
+    iconUrl: "icons/icon@2x.png",
     title: title,
     message: content,
 });
