@@ -25,6 +25,17 @@ This extension stores your API token using Firefox's `browser.storage.sync` API.
 2. Configure your connection to Anytype in the add-on settings
 3. Use the add-on button to save the current page to Anytype
 
+## Maintenance & Support Notice
+
+This project is developed in my **free time**. While I hope others find it useful, please note:
+
+- I can't guarantee regular updates or long-term maintenance  
+- Support may be limited, delayed or not existent 
+- Feel free to fork the project if you need something more customized
+
+> Thank you for your understanding — and for supporting independent, free-time projects!
+
+
 ## Disclaimer & Contributor Note
 
 This is my **first open-source project**, and my JavaScript might be a little rusty — so please use this extension **at your own risk**.
