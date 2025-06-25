@@ -4,11 +4,16 @@
   "version": "0.0.2",
   "description": "Saves the current page to local Anytype client.",
   "homepage_url": "https://github.com/TheA/send-to-anytype-firefox",
+  "icons": {
+    "32": "/icons/icon.png",
+    "64": "/icons/icon@2x.png"
+  },
   "permissions": [
     "storage",
     "tabs",
     "activeTab",
-    "http://localhost/*"
+    "http://localhost/*",
+    "notifications"
   ],
   "background": {
     "scripts": ["background.js"],
