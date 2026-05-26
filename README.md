@@ -1,19 +1,18 @@
 # Send to Anytype Firefox Extension
+> [!IMPORTANT]
+> This Addon will not be developed further. It may not work if the API changed
 
-A lightweight Firefox extension that saves the current tab's URL as a bookmark in your Anytype space.
+A Firefox extension that saves the current tab's URL as a bookmark in your Anytype space.
 
-Currently it is not available through the firefox extension hub. I would like to refine the add-on a little bit more. If you found this you can manually install the add-on.
+The Addon is not available through the firefox extension hub. You can download the release and manually install the add-on.
 
-
-## Current features
+## Features
 
 - Save the current tab as a **bookmark** object to your selected "space"
 - Choose from available spaces using the **options page**
 - Works with the [local API from Anytype](https://developers.anytype.io/)
 
-
-
-## ⚠️ Security Notice
+## Security Notice
 
 This extension stores your API token using Firefox's `browser.storage.sync` API. This means:
 
@@ -27,28 +26,5 @@ This extension stores your API token using Firefox's `browser.storage.sync` API.
 
 ## Maintenance & Support Notice
 
-This project is developed in my **free time**. While I hope others find it useful, please note:
-
-- I can't guarantee regular updates or long-term maintenance  
-- Support may be limited, delayed or not existent 
-- Feel free to fork the project if you need something more customized
-
-> Thank you for your understanding — and for supporting independent, free-time projects!
-
-
-## Disclaimer & Contributor Note
-
-This is my **first open-source project**, and my JavaScript might be a little rusty — so please use this extension **at your own risk**.
-
-I'm always open to **suggestions, tips, improvements, or pull requests**. If you spot a bug, have a better way to do something, or want to contribute, feel free to open an issue or PR.
-
-> Thanks for checking it out and helping me learn!
-
----
-
-## 🔓 Reuse & License
-
-Feel free to **use this code as a starting point for your own projects**, fork it, or modify it — as long as you follow the terms of the [MIT License](LICENSE).
-
-> In short: Keep the license and copyright notice, and you're good!
-
+I had a few more ideas in the works, but since I no longer use Anytype, I won't be continuing to develop the add-on  
+Feel free to use the project as a baseline to improve.
